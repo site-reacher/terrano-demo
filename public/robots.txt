@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /privacy
+Disallow: /terms
+
+# Sitemap — update the domain below after connecting the real Terrano domain
+# Sitemap: https://www.terranoplumbing.com/sitemap.xml

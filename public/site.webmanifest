@@ -1,0 +1,17 @@
+{
+  "name": "Terrano Plumbing & Remodeling",
+  "short_name": "Terrano",
+  "description": "Family-owned plumbing and remodeling company serving Boca Raton and South Florida.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#102A43",
+  "theme_color": "#1976D2",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

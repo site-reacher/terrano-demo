@@ -1,0 +1,33 @@
+import { useEffect, useRef, useState } from 'react';
+
+/**
+ * Adds the `is-visible` class to a root element when it scrolls into view,
+ * enabling CSS reveal animations. Children with `.reveal` and optional
+ * `.reveal-delay-*` classes animate in sequence.
+ */
+export function useReveal<T extends HTMLElement = HTMLDivElement>(
+  options?: IntersectionObserverInit
+) {
+  const ref = useRef<T | null>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -8% 0px', ...options }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [options]);
+
+  return { ref, visible };
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+    Sitemap for Terrano Plumbing & Remodeling.
+    Update the domain below after connecting the real Terrano domain.
+    This is a single-page site with hash-based section navigation,
+    so only the root URL is listed.
+  -->
+  <url>
+    <loc>https://www.terranoplumbing.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
